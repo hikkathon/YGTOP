@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: db_YGTop
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_ygtop_data:/var/lib/postgresql/data
+    networks:
+      - ygtop-network
+
+volumes:
+  postgres_ygtop_data:
+
+networks:
+  ygtop-network:
+    driver: bridge

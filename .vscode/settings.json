@@ -1,0 +1,32 @@
+{
+    // Настройки переноса слов
+ 	"editor.wordWrap": "bounded",
+ 	"editor.wrappingIndent": "same",
+	"editor.wordWrapColumn": 120,
+	"editor.rulers": [120],
+
+    // Настройки курсора
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorSmoothCaretAnimation": "explicit",
+
+    // Автоматическое закрытие тегов
+	"html.autoClosingTags": true,
+	"javascript.autoClosingTags": true,
+	"typescript.autoClosingTags": true,
+
+	// Основные настройки
+	"editor.smoothScrolling": true,
+	"editor.minimap.enabled": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+
+	// Связанные редактирование тегов
+	"editor.linkedEditing": true,
+
+	"editor.glyphMargin": false,
+	"editor.folding": false,
+
+	// Настройка обозревателя
+	"workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "fit",
+}
